@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
     EditText mainEmail, mainPass;
     Button loginButton;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 }else if (mainPass.getText().toString().trim().length()<6) {
                     mainPass.setError("Minimum 6 character required");
                 } else {
+                    Snackbar.make(v,"Login Successfully",Snackbar.LENGTH_SHORT).show();
                     new ToastCommonMethod(MainActivity.this,"Login Successfully");
                     Intent intent = new Intent(MainActivity.this, LoginSuccess.class);
                     startActivity(intent);
