@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.login_btn);
         new_user = findViewById(R.id.new_user);
 
+        //Hello Parv, Good Morning
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
