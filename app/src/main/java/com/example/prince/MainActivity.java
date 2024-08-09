@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 }else if (mainPass.getText().toString().trim().length()<6) {
                     mainPass.setError("Minimum 6 character required");
                 } else {
+                    //Hello Prince, Good Morning
                     Snackbar.make(v,"Login Successfully",Snackbar.LENGTH_SHORT).show();
                     new ToastCommonMethod(MainActivity.this,"Login Successfully");
                     Intent intent = new Intent(MainActivity.this, LoginSuccess.class);
